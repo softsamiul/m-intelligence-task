@@ -1,0 +1,25 @@
+@import '../../colors.scss';
+
+.home-wrapper-main{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 50px;
+    box-sizing: border-box;
+    .home-top-heading-text{
+        font-size: 24px;
+        color: $secondary-text-color;
+    }
+    .home-top-search-area{
+        display: flex;
+        select#selector {
+            border: 1px solid #E3E4E8;
+            padding: 10px;
+            color: $muted-text-color;
+            font-size: 14px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            width: 300px;
+        }
+    }
+}

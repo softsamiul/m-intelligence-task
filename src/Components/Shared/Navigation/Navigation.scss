@@ -1,0 +1,59 @@
+@import '../../../colors.scss';
+.navigation{
+    background-color: transparent;
+    box-shadow: none;
+    width: 80%;
+    margin: 0 auto;
+
+    header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation4.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionStatic.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+        background-color: transparent;
+        box-shadow: none;
+        .MuiBox-root.css-1t6c9ts {
+            content: center;
+            display: flex;
+            justify-content: center;
+        }
+        .MuiTypography-root.MuiTypography-h6.MuiTypography-noWrap.css-1083xa6-MuiTypography-root {
+            color: $primary-text-color;
+        }
+    }
+
+    .brand-logo-img{
+        margin-right: 10px;
+    }
+    .menu-item-wrapper{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .menu-item-icon{
+            width: 20px;
+            height: 20px;
+        }
+        .css-1q39md6-MuiButtonBase-root-MuiButton-root{
+            text-transform: capitalize;
+            font-size: 18px;
+        }
+        .css-1q39md6-MuiButtonBase-root-MuiButton-root:hover {
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            background-color: transparent;
+        }
+        
+    }
+    .dashboard-wrap{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
+.navbar-right-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .navbar-user-text{
+        margin: 0 20px;
+        .username-text{
+            font-weight: bold;
+        }
+    }
+}
