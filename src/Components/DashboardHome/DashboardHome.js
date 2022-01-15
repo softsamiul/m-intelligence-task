@@ -219,14 +219,14 @@ const DashboardHome = () => {
                 ? selectedValues.find((elem) => elem.value === "browser") && (
                     <div className="browser-wrap">
                       <h2 className="main-content-head">Browser</h2>
-                      {!checkedBrowserValue.length
+                      {!uniqueBrowser.length
                         ? browsers.map((elem) => (
                             <div className="item-single" key={elem}>
                               <p>{elem}</p>
                               <div className="content-section-divider"></div>
                             </div>
                           ))
-                        : checkedBrowserValue.map((elem) => (
+                        : uniqueBrowser.map((elem) => (
                             <div className="item-single" key={elem}>
                               <p>{elem}</p>
                               <div className="content-section-divider"></div>
@@ -237,14 +237,14 @@ const DashboardHome = () => {
                 : options.find((elem) => elem.value === "browser") && (
                     <div className="browser-wrap">
                       <h2 className="main-content-head">Browser</h2>
-                      {!checkedBrowserValue.length
+                      {!uniqueBrowser.length
                         ? browsers.map((elem) => (
                             <div className="item-single" key={elem}>
                               <p>{elem}</p>
                               <div className="content-section-divider"></div>
                             </div>
                           ))
-                        : checkedBrowserValue.map((elem) => (
+                        : uniqueBrowser.map((elem) => (
                             <div className="item-single" key={elem}>
                               <p>{elem}</p>
                               <div className="content-section-divider"></div>
