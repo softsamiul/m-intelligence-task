@@ -1,16 +1,20 @@
-@import '../../../colors.scss';
+@import "../../../colors.scss";
 
-.footer-main-wrapper{
-    width: 80%;
-    margin: 0 auto;
-    padding: 15px 0;
-    .footer-content-wrap{
-        display: flex;
-        justify-content: center;
-        .footer-brand-text{
-            color: $primary-text-color;
-            font-size: 22px;
-            margin-left: 10px;
-        }
+.footer-main-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0;
+  .footer-content-wrap {
+    display: flex;
+    justify-content: center;
+    .footer-brand-text {
+      color: $primary-text-color;
+      font-size: 22px;
+      margin-left: 10px;
+      .brand-logo-text {
+        font-weight: bold;
+        margin-right: 10px;
+      }
     }
+  }
 }
