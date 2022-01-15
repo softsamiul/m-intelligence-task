@@ -16,7 +16,7 @@ const data = [
 export const allData = [
   {
     id:1,
-    browser: 'chromme',
+    browser: 'chrome',
     src: Chrome,
     country:'India',
     date: DateDataGrapgh

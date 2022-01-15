@@ -23,7 +23,7 @@ const useData = () => {
     },
   ];
 
-  const dates = [DateGraph, DateGraph, DateGraph]
+  const dates = [DateGraph, DateGraph, DateGraph, DateGraph]
 
   const [breakdown, setBreakdown] = useState(breakdownItems);
   const breakdownData = data;

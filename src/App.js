@@ -18,7 +18,6 @@ function App() {
 
   const result = data2[0].browser;
 
-  console.log(result)
 
 
   return (
