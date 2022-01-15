@@ -27,6 +27,7 @@ const DashboardHome = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const result = e.target.value;
+    return result;
   };
   // Declaring option for top breakdown section
   const options = [
@@ -57,6 +58,7 @@ const DashboardHome = () => {
   //   Handle Browser filter
   const handleBrowserFilter = (e) => {
     const isChecked = e.target.checked;
+    const uniqueBrowser = [];
     const val = e.target.name;
     if (isChecked) {
       setCheckedBrowserValue([...checkedBrowserValue, val]);
@@ -64,6 +66,11 @@ const DashboardHome = () => {
       checkedBrowserValue.pop();
     }
   };
+
+  // Uniqify array
+    const uniqueBrowser = checkedBrowserValue.filter(elem => elem.indexOf(checkedBrowserValue) === -1);
+    const uniqueCountry = checkedCountriesValue.filter(elem => elem.indexOf(checkedCountriesValue) === -1);
+    const uniqueDate = checkedDateValue.filter(elem => elem.indexOf(checkedDateValue) === -1);
 
   //   Handle Country filter
   const handleCountryFilter = (e) => {
@@ -87,7 +94,7 @@ const DashboardHome = () => {
       className="dashboard-wrapper-main"
       style={{ backgroundColor: "#F8F9FA" }}
     >
-      <Fade bottom>
+      {/* <Fade bottom> */}
         {/* Dashboard top breakdown section */}
         <div>
           <h4 className="dashboard-top-heading-text">
@@ -99,7 +106,6 @@ const DashboardHome = () => {
                 multi
                 options={options}
                 values={[]}
-                className="selector-breakdown"
                 onChange={(value) => setSelectedValues(value)}
               />
             </form>
@@ -158,7 +164,7 @@ const DashboardHome = () => {
                   <input
                     className="search-input-inside"
                     type="text"
-                    placeholder="Searchbar"
+                    placeholder="Search..."
                   />
                 </div>
               </div>
@@ -184,7 +190,7 @@ const DashboardHome = () => {
                 </li>
                 <li>
                   {/* dividier */}
-                  <div className="siderbar-divider"></div>
+                  <div className="siderbar-divider browser-item-wrap"></div>
                   Country
                   <ul className="ul-self ul-inner">
                     {countries.map((elem) => (
@@ -203,7 +209,7 @@ const DashboardHome = () => {
                 </li>
                 {/* dividier */}
                 <div className="siderbar-divider"></div>
-                <li onClick={handleDateFilter}>Date</li>
+                <li onClick={handleDateFilter} className="browser-item-wrap">Date</li>
               </ul>
             </div>
             {/* main content */}
@@ -339,7 +345,7 @@ const DashboardHome = () => {
             </div>
           </div>
         </div>
-      </Fade>
+      {/* </Fade> */}
     </div>
   );
 };
