@@ -53,7 +53,7 @@ const Navigation = () => {
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
             
-            Unified Analytics
+            <span className='brand-logo-text'>Unified</span> Analytics
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

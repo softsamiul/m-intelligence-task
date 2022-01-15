@@ -6,3 +6,17 @@
 a{
   text-decoration: none;
 }
+
+// Overhiding some styles
+header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation4.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionStatic.css-1x7skt0 {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.MuiBox-root.css-1t6c9ts {
+  display: flex !important;
+  justify-content: center !important;
+}
+.react-dropdown-select.selector-breakdown.css-wmw4vi-ReactDropdownSelect.e1gzf2xs0 {
+  width: 325px !important;
+  text-transform: capitalize;
+}
